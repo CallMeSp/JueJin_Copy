@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/barmenu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="home"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:id="@+id/btn_home"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="search"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_search"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="message"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_message"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="mine"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_mine"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:id="@+id/web_toolbar">
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:background="@mipmap/arrow"
+            android:id="@+id/back_arrow"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:id="@+id/circle_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="作者"
+            android:gravity="center_vertical"
+            android:id="@+id/inweb_writter"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/entry_detail_tool"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/view_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="收藏"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/view_comment"
+            android:gravity="center_vertical"
+            android:text="35"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/entry_collection_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="12"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/entry_to_collect"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/entry_collection_count"
+            android:src="@mipmap/ic_action_favorite_outline" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/web_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/web_toolbar"
+        android:layout_above="@+id/entry_detail_tool" />
+</RelativeLayout>
